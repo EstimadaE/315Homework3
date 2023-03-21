@@ -20,10 +20,27 @@ class GasPrices {
 
     //getPrices/month/day/year
     
+    public float getPrice(){
+        return price;
+    }
+
+    public int getMonth()
+    {
+        return month;
+    }
+
+    public int getDay(){
+        return day;
+    }
+
+    public int getYear()
+    {
+        return year;
+    }
 
 
     public static void main(String[] args) throws FileNotFoundException {
-        ArrayList<GasPrices> s = new ArrayList();
+        ArrayList<GasPrices> inList = new ArrayList();
         BufferedReader br;
         try {
             br = new BufferedReader(new FileReader("C:\\Users\\Eli.Eli\\Desktop\\Spring 2023\\330A3\\GasPrice.txt"));
@@ -62,7 +79,7 @@ class GasPrices {
              * Collections.sort(s,  (gas1,gas2)->. Integer.compare(gas1.getPrice,  gas2.getPrice()))
              * 
             */
-
+            Collections.sort(s,)
 
             
             }
